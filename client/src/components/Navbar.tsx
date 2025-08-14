@@ -90,9 +90,21 @@ const Navbar = () => {
 
       {/* mobile devices */}
       <div className="sm:hidden flex justify-between items-center relative">
-        <Link to={"/profile"}>
-          <div className="w-[30px] flex justify-center items-center cursor-pointer rounded-full">
-            <img src={thirdweb} alt="profile" className="object-contain " />
+       <Link to={"/profile"}>
+          <div className="w-[40px] h-[40px] flex justify-center items-center cursor-pointer rounded-full overflow-hidden">
+            {!address?.address ? (
+              <img
+                src={logo}
+                alt="wallet-avatar"
+                className="w-full h-full object-contain rounded-full"
+              />
+            ) : (
+              <img
+                src={`https://api.dicebear.com/7.x/identicon/svg?seed=${address.address}`}
+                alt="wallet-avatar"
+                className="w-full h-full object-cover rounded-full"
+              />
+            )}
           </div>
         </Link>
 

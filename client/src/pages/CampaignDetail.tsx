@@ -83,7 +83,7 @@ const CampaignDetail = () => {
           alt="campaign-image"
           className="object-cover rounded-xl  w-[80%] max-md:w-full"
         />
-        <div className="flex flex-col max-md:flex-row max-md:w-full gap-2 max-md:items-center justify-between items-end w-[20%] h-full">
+        <div className="flex flex-col max-md:flex-row max-md:w-full sm:gap-2 max-md:items-center justify-around items-end w-[20%] h-full">
           <StatsCard
             title={
               !isCampaignPending && campaigns?.[5] !== undefined

@@ -7,7 +7,7 @@ import CampaignDetail from "./pages/CampaignDetail";
 
 export function App() {
 	return (
-		<main className="relative min-h-svh bg-[#13131a] flex flex-row sm:p-8 p-4">
+		<main className="relative min-h-svh bg-[#13131a] flex flex-row sm:p-8 p-4 overflow-hidden">
 			<div className="sm:flex hidden mr-10 relative">
 				<Sidebar/>
 			</div>
